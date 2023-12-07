@@ -1,14 +1,14 @@
-import './App.css';
-import TodoApp from './TodoApp';
-import { TodoProvider } from './TodoContext';
+import TodoApp from "./TodoApp";
+import { TodoProvider } from "./TodoContext";
+import Background from "./components/Background";
+import Foreground from "./components/Foreground";
 
 function App() {
   return (
-    <TodoProvider>
-    <div className="App">
-      <TodoApp/>
+    <div className="relative w-full h-screen bg-zinc-800">
+      <Background />
+      <Foreground />
     </div>
-    </TodoProvider>
   );
 }
 
